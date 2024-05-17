@@ -1,0 +1,75 @@
+.browse-menu{
+    padding: 0vw 4vw;
+    display: flex;
+    flex-direction: column;
+   
+    align-items: center;
+    margin-bottom: 8vw;
+    
+}
+
+.browsemenu-heading{
+font-size: max(3.5vw, 18px);
+text-align: center;
+padding: 3vw 2vw;
+
+}
+
+.menu-container {
+    display: flex;
+    justify-content: space-between; 
+    width: 100%;
+    
+  }
+  
+  .menu-box {
+    width: 23%; /* Adjust width for equal spacing */
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center; 
+    
+    
+    
+  }
+  
+  .menu-image {
+    width:35%;
+    height: 160px;
+    padding: 2vw 0vw;
+    
+    
+    
+  }
+  
+  .menu-details {
+    margin-top: 10px;
+    
+  }
+
+  .menu-details h3{
+    font-weight: 600;
+    font-size:max(1.5vw, 18px) ;
+    padding: 1vw 0vw;
+  }
+  
+  .menu-details p{
+    
+    padding: 1vw 0vw;
+  }
+  
+
+  .explore-menu {
+    font-size: max(1.vw, 13px);
+    color: #de303f;
+    text-decoration: none;
+    font-weight: bold;
+     
+  }
+  
+  /* Add any additional styling as needed */
+  
