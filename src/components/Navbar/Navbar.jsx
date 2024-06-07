@@ -13,8 +13,8 @@ const Navbar = () => {
       <ul className="navbar-components">
         <li onMouseEnter={()=>setComponents("home")} className={components=="home"?"active":""} > <Link to="/"> Home</Link></li>
         <li onMouseEnter={()=>setComponents("menu") }className={components=="menu"?"active":""} ><Link to="/menu"> Menu</Link></li>
-        <li onMouseEnter={()=>setComponents("about")} className={components=="about"?"active":""} >About</li>
-        <li onMouseEnter={()=>setComponents("contact")} className={components=="contact"?"active":""} >Contact</li>
+        <li onMouseEnter={()=>setComponents("about")} className={components=="about"?"active":""} ><Link to="/about"> About</Link></li>
+        <li onMouseEnter={()=>setComponents("contact")} className={components=="contact"?"active":""} ><Link to="/contact"> Contact</Link></li>
         <li onMouseEnter={()=>setComponents("feedback") }className={components=="feedback"?"active":""} >Feedback</li>
       </ul>
       <div className="navbar-right ">

@@ -1,10 +1,9 @@
 import React from 'react'
-import './Menunav.css'
 
-const Menunav = ({filterItem, menuList}) => {
+const menuNav = ({filterItem, menuList}) => {
   return (
     <>
-        <nav className='menu-nav'>
+        <nav className='navbar'>
             <div className='btn-group'>
             {
                 menuList.map((curEle) => {
@@ -21,5 +20,4 @@ const Menunav = ({filterItem, menuList}) => {
   )
 }
 
-
-export default Menunav
+export default menuNav

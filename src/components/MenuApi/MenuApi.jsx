@@ -1,4 +1,5 @@
-const Menulist = [
+
+const Menu = [
     {
       id: 1,
       image: "images/maggi.jpg",
@@ -83,4 +84,5 @@ const Menulist = [
     },
   ];
   
-  export default Menulist;
+  export default Menu;
+  
