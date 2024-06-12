@@ -1,23 +1,30 @@
-import React from 'react'
+import React, { useState } from 'react';
 
-const menuNav = ({filterItem, menuList}) => {
+const MenuNav = ({ filterItem, menuList }) => {
+  const [activeItem, setActiveItem] = useState(null);
+
+  const handleClick = (item) => {
+    setActiveItem(item);
+    filterItem(item);
+  };
+
   return (
     <>
-        <nav className='navbar'>
-            <div className='btn-group'>
-            {
-                menuList.map((curEle) => {
-                    return(
-                        <button className='btn-group__item' 
-                            onClick= {() => filterItem(curEle)}>
-                            {curEle}
-                        </button>
-                    )
-                })}   
-            </div>
-        </nav>
+      <nav className='navbar'>
+        <div className='btn-group'>
+          {menuList.map((curEle) => (
+            <button
+              key={curEle}
+              className={`btn-group__item ${activeItem === curEle ? 'btn-group__item--active' : ''}`}
+              onClick={() => handleClick(curEle)}
+            >
+              {curEle}
+            </button>
+          ))}
+        </div>
+      </nav>
     </>
-  )
-}
+  );
+};
 
-export default menuNav
+export default MenuNav;
