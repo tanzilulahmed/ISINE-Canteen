@@ -85,7 +85,7 @@
   
   
   .card-title {
-    font-size: 2em;
+    font-size: 1.5em;
     /* margin: 10px 0; */
   }
   
@@ -141,6 +141,20 @@
     border: 1px solid rgb(0, 0, 0); 
   }
   
+  .card-container {
+    animation: fadeInUp 0.9s ease-out;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
   
   /* Responsive styling */
   @media (max-width: 768px) {
@@ -169,16 +183,31 @@
     }
   }
   
-  
+  /* Menu Header */
+.menu-header {
+  text-align: center;
+  margin: 20px 20px;
+}
+
+.menu-header h1 {
+  font-size: 4.0em;
+  margin-bottom: 10px;
+  color: hsl(0, 0%, 0%);
+}
+
+.menu-header p {
+  font-size: 1.2em;
+  color: #6c757d;
+}
   /* ---------- Button styles ------------------ */
   
  /* Navbar container styles */
-.navbar {
-  padding-top: 50px;
+.menu-navbar {
+  padding: 15px 0px;
   text-align: center;
 }
 
-.navbar h1 {
+.menu-navbar h1 {
   padding-bottom: 20px;
   text-transform: capitalize;
 }
@@ -200,10 +229,11 @@
   background-color: white; /* White background */
   color: black; /* Black text */
   cursor: pointer;
-  font-size: 15px;
+  font-size: 14px;
   box-shadow: none;
   transition: all 300ms ease-out;
   text-transform: capitalize;
+ 
   position: relative;
   border-radius: 25px; /* More rounded corners */
 }

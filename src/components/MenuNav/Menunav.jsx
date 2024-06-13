@@ -10,7 +10,7 @@ const MenuNav = ({ filterItem, menuList }) => {
 
   return (
     <>
-      <nav className='navbar'>
+      <nav className='menu-navbar'>
         <div className='btn-group'>
           {menuList.map((curEle) => (
             <button
